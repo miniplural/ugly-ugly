@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="right-down" width="8" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" source="Ugly Ugly Tileset.tsx"/>
+ <tileset firstgid="17" source="Collision.tsx"/>
+ <layer id="3" name="BG" width="8" height="10">
+  <data encoding="csv">
+2,2,2,2,2,2,2,2,
+2,1,1,1,1,1,1,2,
+2,5,5,5,5,5,5,2,
+2,6,6,6,6,6,6,2,
+2,6,6,6,6,6,6,2,
+2,6,6,6,6,6,6,2,
+2,6,6,6,6,6,6,2,
+2,2,2,2,2,6,2,2,
+2,2,2,2,2,6,2,2,
+2,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <layer id="4" name="Furniture" width="8" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,9,10,0,0,0,
+0,3,0,13,14,0,0,0,
+0,7,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Collision" width="8" height="10" opacity="0.21">
+  <data encoding="csv">
+17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,
+17,17,0,0,0,0,0,17,
+17,0,0,0,0,0,0,17,
+17,0,0,0,0,0,0,17,
+17,0,0,0,0,0,0,17,
+17,17,17,17,17,0,17,17,
+17,17,17,17,17,0,17,17,
+17,17,17,17,17,17,17,17
+</data>
+ </layer>
+</map>
