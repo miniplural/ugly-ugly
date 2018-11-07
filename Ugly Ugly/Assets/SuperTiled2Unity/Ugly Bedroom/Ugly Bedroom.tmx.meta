@@ -13,7 +13,12 @@ ScriptedImporter:
     100016: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (4)
     100018: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (5)
     100020: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (6)
-    100022: _MapPrfab/Ugly Bedroom/Furniture
+    100022: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (7)
+    100024: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (8)
+    100026: _MapPrfab/Ugly Bedroom/Furniture
+    100028: _MapPrfab/Ugly Bedroom/Objects
+    100030: _MapPrfab/Ugly Bedroom/Rug
+    100032: _MapPrfab/Ugly Bedroom/Window
     400000: _MapPrfab/Ugly Bedroom/Transform
     400002: _MapPrfab/Ugly Bedroom/BG/Transform
     400004: _MapPrfab/Ugly Bedroom/Collision/Transform
@@ -25,7 +30,12 @@ ScriptedImporter:
     400016: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (4)/Transform
     400018: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (5)/Transform
     400020: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (6)/Transform
-    400022: _MapPrfab/Ugly Bedroom/Furniture/Transform
+    400022: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (7)/Transform
+    400024: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (8)/Transform
+    400026: _MapPrfab/Ugly Bedroom/Furniture/Transform
+    400028: _MapPrfab/Ugly Bedroom/Objects/Transform
+    400030: _MapPrfab/Ugly Bedroom/Rug/Transform
+    400032: _MapPrfab/Ugly Bedroom/Window/Transform
     5000000: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon/PolygonCollider2D
     6000002: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (1)/PolygonCollider2D
@@ -34,6 +44,8 @@ ScriptedImporter:
     6000008: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (4)/PolygonCollider2D
     6000010: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (5)/PolygonCollider2D
     6000012: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (6)/PolygonCollider2D
+    6000014: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (7)/PolygonCollider2D
+    6000016: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (8)/PolygonCollider2D
     6600000: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/CompositeCollider2D
     11400000: _MapPrfab/Ugly Bedroom/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/Ugly Bedroom/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -48,17 +60,31 @@ ScriptedImporter:
     11400020: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400022: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400024: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (6)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400026: _MapPrfab/Ugly Bedroom/Furniture/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400028: _MapPrfab/Ugly Bedroom/Furniture/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400030: _superAsset
+    11400026: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (7)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400028: _MapPrfab/Ugly Bedroom/Collision/Collision_Default/Polygon (8)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/Ugly Bedroom/Furniture/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400032: _MapPrfab/Ugly Bedroom/Furniture/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400034: _MapPrfab/Ugly Bedroom/Objects/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400036: _MapPrfab/Ugly Bedroom/Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400038: _MapPrfab/Ugly Bedroom/Rug/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400040: _MapPrfab/Ugly Bedroom/Rug/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400042: _MapPrfab/Ugly Bedroom/Window/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400044: _MapPrfab/Ugly Bedroom/Window/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400046: _superAsset
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/Ugly Bedroom/Grid
     3664157343022684176: _MapPrfab/Ugly Bedroom/BG/TilemapRenderer
     3664157343022684178: _MapPrfab/Ugly Bedroom/Collision/TilemapRenderer
     3664157343022684180: _MapPrfab/Ugly Bedroom/Furniture/TilemapRenderer
+    3664157343022684182: _MapPrfab/Ugly Bedroom/Objects/TilemapRenderer
+    3664157343022684184: _MapPrfab/Ugly Bedroom/Rug/TilemapRenderer
+    3664157343022684186: _MapPrfab/Ugly Bedroom/Window/TilemapRenderer
     8195094279510102542: _MapPrfab/Ugly Bedroom/BG/Tilemap
     8195094279510102544: _MapPrfab/Ugly Bedroom/Collision/Tilemap
     8195094279510102546: _MapPrfab/Ugly Bedroom/Furniture/Tilemap
+    8195094279510102548: _MapPrfab/Ugly Bedroom/Objects/Tilemap
+    8195094279510102550: _MapPrfab/Ugly Bedroom/Rug/Tilemap
+    8195094279510102552: _MapPrfab/Ugly Bedroom/Window/Tilemap
   externalObjects: {}
   userData: 
   assetBundleName: 
