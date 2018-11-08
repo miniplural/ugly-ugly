@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
-//TEST COMMENT TO SEE IF PUSH WORKED. CAN DELETE LATER.
+
     public Transform target;
     public float m_speed = 0.1f;
     Camera mycam;
