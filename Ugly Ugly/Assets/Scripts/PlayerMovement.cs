@@ -38,5 +38,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             rbody.MovePosition(rbody.position + movement_vector * 2/3 * Time.deltaTime);
         }
+
+
     }
+
 }
