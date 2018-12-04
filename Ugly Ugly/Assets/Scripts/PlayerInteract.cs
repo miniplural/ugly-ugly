@@ -13,36 +13,59 @@ public class PlayerInteract : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && currentInterObj)
         {
-            //Check if object is meant to be picked up and stored in inventory
-            if(currentInterObjScript.inventory) {
+            //Check if it can be stored in inventory
+            if (currentInterObjScript.inventory)
+            {
                 inventory.AddItem(currentInterObj);
-
             }
 
-            //Check if object can be opened
-            if(currentInterObjScript.openable) {
+            //Check to see if object can be opened
+            if (currentInterObjScript.openable)
+            {
 
-                //Check if object is locked
-                if(currentInterObjScript.locked) {
+                //check if it's locked
+                if (currentInterObjScript.locked)
+                {
 
-                    //Check if we have object needed to unlock
-                    //Search inventory for object - if found, unlock object
-                    if(inventory.FindItem (currentInterObjScript.itemNeeded)) {
-                        //item found
+                    //check if we have object needed to unlock
+                    //search inventory for item needed - if found, unlock object
+                    if (inventory.FindItem(currentInterObjScript.itemNeeded))
+                    {
+                        //found item needed, unlock thing
                         currentInterObjScript.locked = false;
                         Debug.Log(currentInterObj.name + " was unlocked");
-                    } else {
+                    }
+                    else
+                    {
                         Debug.Log(currentInterObj.name + " was not unlocked");
                     }
-                } else {
+                }
+                else
+                {
                     //object is not locked - open the object
                     Debug.Log(currentInterObj.name + " is unlocked");
+                    currentInterObjScript.Open();
                 }
             }
 
+            //Check if object talks and has a message
+            if (currentInterObjScript.talks)
+            {
+                //tell the object to give its message
+                currentInterObjScript.Talk();
+            }
+        }
+        //Eat an item
+        if(Input.GetButtonDown("Space")){
+            //check inventory for an edible item
+            GameObject edible = inventory.FindItemByType("Edible");
+            if(edible != null){
+                Debug.Log("nom nom nom nom nom nom nom nom");
+                inventory.RemoveItem(edible);
+            }
+        }
 
         }
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -57,10 +80,8 @@ public class PlayerInteract : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("InterObject"))
-        {
-            if (other.gameObject == currentInterObj)
-            {
+        if (other.CompareTag("InterObject")){
+            if (other.gameObject == currentInterObj){
                 currentInterObj = null;
             }
 
