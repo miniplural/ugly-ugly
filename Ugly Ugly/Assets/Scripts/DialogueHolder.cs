@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour {
+public class DialogueHolder : MonoBehaviour {
 
     public string dialogue;
     private DialogueManager dMan;
+
+    public string[] dialogueLines;
 
 	// Use this for initialization
 	void Start () {
@@ -17,13 +19,18 @@ public class Dialogue : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if(other.gameObject.name == "Ugly")
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyUp(KeyCode.Space))
             {
-                dMan.ShowBox(dialogue);
+                if(!dMan.dialogueActive)
+                {
+                    dMan.dialogueLines = dialogueLines;
+                    dMan.currentLine = 0;
+                    dMan.ShowDialogue();
+                }
             }
         }
     }
