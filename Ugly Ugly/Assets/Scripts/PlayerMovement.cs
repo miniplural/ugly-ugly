@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour {
 
         //RUN VS WALK
         if (Input.GetKey(KeyCode.LeftShift))
-            rbody.MovePosition(rbody.position + movement_vector * 1 * Time.deltaTime);
+            rbody.MovePosition(rbody.position + movement_vector * 6/5 * Time.deltaTime);
 
         else
         {
-            rbody.MovePosition(rbody.position + movement_vector * 2/3 * Time.deltaTime);
+            rbody.MovePosition(rbody.position + movement_vector * 4/5 * Time.deltaTime);
         }
 
 
