@@ -56,7 +56,7 @@ public class PlayerInteract : MonoBehaviour
             }
         }
         //Eat an item
-        if(Input.GetButtonDown("Space")){
+        if(Input.GetButtonDown("Remove")){
             //check inventory for an edible item
             GameObject edible = inventory.FindItemByType("Edible");
             if(edible != null){
